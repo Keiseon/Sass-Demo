@@ -1,0 +1,31 @@
+.container {
+  max-width: 1100px;
+  padding: 0em 1.875em;
+  margin: 0em auto;
+  overflow: auto;
+}
+
+//Margin and Padding classes
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  // For margin All around
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // For margin Top and Bottom
+  .my-#{$space} {
+    margin: #{$space}rem 0rem;
+  }
+
+  // For padding All around
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // For padding Top and Bottom
+  .py-#{$space} {
+    padding: #{$space}rem 0rem;
+  }
+}
